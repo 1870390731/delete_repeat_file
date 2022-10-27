@@ -1,0 +1,2 @@
+# delete_repeat_file
+删除某个文件夹里名称和内容重复的文件
