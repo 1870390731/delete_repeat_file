@@ -1,3 +1,5 @@
+require('./get_name_repeat_files.js')
+
 const fs = require('fs')
 const repeat_files = require('./name_repeat_files.json')
 const deleted_files = {}

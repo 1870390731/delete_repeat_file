@@ -5,6 +5,7 @@
   "main": "delete_repeat_file.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "repeat": "node get_content_repeat_file.js",
     "delete": "node delete_repeat_file.js"
   },
   "keywords": [],

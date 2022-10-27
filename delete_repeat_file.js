@@ -1,4 +1,3 @@
-require('./get_name_repeat_files.js')
 require('./get_content_repeat_file.js')
 
 const fs = require('fs')
