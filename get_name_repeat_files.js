@@ -8,6 +8,9 @@ console.timeEnd('get_name_repeat_files');
 
 function getAllFile(dir, files = {}){
     fs.readdirSync(dir).forEach(ele => {
+        if (ele.includes('delete_repeat_file')) {
+            return
+        }
         const complete_path = path.resolve(dir, ele)
         console.log(complete_path);
         const stat = fs.statSync(complete_path)
