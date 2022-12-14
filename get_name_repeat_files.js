@@ -12,7 +12,6 @@ function getAllFile(dir, files = {}){
             return
         }
         const complete_path = path.resolve(dir, ele)
-        console.log(complete_path);
         const stat = fs.statSync(complete_path)
         if (stat.isFile()) {
             if (files[ele]) {
@@ -22,6 +21,7 @@ function getAllFile(dir, files = {}){
                 files[ele] = [complete_path]
             }
         } else {
+            console.log(complete_path);
             getAllFile(complete_path, files)
         }
     })
